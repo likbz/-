@@ -1,0 +1,23 @@
+
+
+h1.headline {
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+p {
+    color: #252525;
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 0;
+    font-weight: 300;
+    font-family: Merriweather,Times,sans-serif;
+}
+    
+a {
+    color: #2093d2;
+}

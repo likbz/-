@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %} 
+
+ <link href="{% static 'css/home.css' %}" rel="stylesheet">
+
+
+    
+   <!-- #region Jssor Slider Begin -->
+    <!-- Source: https://www.jssor.com/jssorcom1000/marketers.slider -->
+    <script  src="{% static 'slider/js/jquery-1.11.3.min.js' %}" type="text/javascript" ></script>
+    <script  src="{% static 'slider/js/jssor.slider-24.1.5.min.js' %}" type="text/javascript"  ></script>
+    <script type="text/javascript" async="async"">
+    
+    
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 600,
+              $SlideHeight: 300
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1440);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style></style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:-20px;down:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="{% static 'slider/img/opdenadcashslide.jpg' %}" />
+                <a href="/joint-marketing-association" style="display:block; position:absolute;top:108px;left:85px;width:80px;height:20px;z-index:0;"></a>
+                <a href="/joint-marketing-association" style="display:block; position:absolute;top:88px;left:281px;width:40px;height:10px;z-index:0;"></a>
+                <a href="/joint-marketing-association" style="display:block; position:absolute;top:112px;left:424px;width:65px;height:18px;z-index:0;"></a>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+    
+    
+
+
+
+        
+
+        <!--========== PAGE CONTENT ==========-->
+        <!-- Features -->
+        <div id="js__scroll-to-section" class="container g-padding-y-100--xs g-padding-y-125--sm">
+            <div class="g-text-center--xs g-margin-b-50--xs">
+                <h2 class="titlecenter">Reduce costs on 
+ your business from now.<br>Trusts, Administrations, Exchanges, Rentals and Purchases off:</h2>
+            </div></br>
+            <div class="row g-margin-b-60--xs g-margin-b-70--md">
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".1s">
+                                <i class="g-font-size-28--xs g-color--primary ti-desktop"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+<a href="#" class="btn btn-block btn-lg btn-default"><span class="glyphicon glyphicon-ok-sign"></span> Domains</a>                            <p class="g-margin-b-0--xs"> DNS, Domains and Subdomains.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".2s">
+                                <i class="g-font-size-28--xs g-color--primary ti-settings"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                        <a href="#" class="btn btn-block btn-lg btn-default"><span class="glyphicon glyphicon-hdd"></span> Hosting | Servers</a>
+                            <p class="g-margin-b-0--xs">Hostings, Servers, Racks, VPS, Rooms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".3s">
+                                <i class="g-font-size-28--xs g-color--primary ti-ruler-alt-2"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                        <a href="#" class="btn btn-block btn-lg btn-default"><span class="glyphicon glyphicon-lock"></span> SSL and Security</a>
+                            <p class="g-margin-b-0--xs">SSL Certificates, Firewalls, Encryptions, Passwords.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // end row  -->
+            <div class="row">
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".4s">
+                                <i class="g-font-size-28--xs g-color--primary ti-package"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                        <a href="#" class="btn btn-block btn-lg btn-default"><span class="glyphicon glyphicon-cloud-download"></span> Templates and Design</a>
+                            <p class="g-margin-b-0--xs">Templates, Apps Themes, Extensions, Plugins, Vectors, Logos, Banners.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".5s">
+                                <i class="g-font-size-28--xs g-color--primary ti-star"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <a href="#" class="btn btn-block btn-lg btn-default"><span class="glyphicon glyphicon-signal"></span> Traffic</a>
+                            <p class="g-margin-b-0--xs">Traffic Applications, Software, Promotions in Social Networks, Advertising.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".6s">
+                                <i class="g-font-size-28--xs g-color--primary ti-panel"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <a href="#" class="btn btn-block btn-lg btn-default"><span class="glyphicon glyphicon-usd"></span> Creativity | Innovation</a>
+                            <p class="g-margin-b-0--xs">Ideas, Projects, Scripts, Plans, Platforms, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // end row  -->
+        </div>
+        <!-- End Features -->
+
+
+
+
+
+</html>
+{% endblock %}
+
